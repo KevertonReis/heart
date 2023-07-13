@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center; 
+}
+
 .heart {
     position: relative;
     height: 160px;
@@ -21,13 +31,16 @@
     left: -30px;
 }
 
-.heart p {
+.love {
     position: absolute;
-    z-index: 1;
-    transform: rotate(-45deg);
-    top: 65px;
-    left: -15px;
-    margin-left: 15px;
+    z-index: 2;
+    width: 100%;
+    margin: 0 auto;
     font: bold 20px arial;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.love p {
+    margin-left: -30px;
 }
