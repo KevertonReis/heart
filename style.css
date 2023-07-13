@@ -1,0 +1,33 @@
+.heart {
+    position: relative;
+    height: 160px;
+    width: 100px;
+    background: red;
+    border-radius: 200px 200px 0 0 ;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    box-shadow: 15px 0px 15px black;
+}
+
+.heart::before{
+    content: "";
+    position: absolute;
+    background: red;
+    height: 160px;
+    width: 100px;
+    border-radius: 200px 200px 0 0 ;
+    transform: rotate(-90deg);
+    top: 30px;
+    left: -30px;
+}
+
+.heart p {
+    position: absolute;
+    z-index: 1;
+    transform: rotate(-45deg);
+    top: 65px;
+    left: -15px;
+    margin-left: 15px;
+    font: bold 20px arial;
+    text-transform: uppercase;
+}
